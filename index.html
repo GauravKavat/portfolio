@@ -7,14 +7,12 @@
   <head>
     <meta charset="utf-8" />
     <title>Gaurav | Portfolio</title>
-    <!-- <meta content="PROfounders | Home" property="og:title" /> -->
-    <!-- <meta content="PROfounders | Home" property="twitter:title" /> -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link
-      href="https://cdn.prod.website-files.com/6437b054c52492e2d8f3418f/css/profounders-capital.webflow.6e939b292.css"
-      rel="stylesheet"
-      type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
     <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
       @media (min-width: 992px) {
         html.w-mod-js:not(.w-mod-ix)
           [data-w-id="4ec10979-7b6c-74df-d348-d48277f69f17"] {
@@ -418,17 +416,9 @@ a,
                       class="menu_brand w-inline-block w--current">
                       <div
                         class="text-size-logo text-color-green text-weight-normal">
-                        Gaurav Meena
+                        Software Engineer
                       </div>
                     </a>
-                    <div
-                      fs-scrolldisable-element="disable"
-                      data-w-id="27b54689-81d9-eafc-5d36-909e1bf2887b"
-                      class="menu_button show_tablet">
-                      <div class="menu_line-top"></div>
-                      <div class="menu_line-middle"></div>
-                      <div class="menu_line-bottom"></div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -453,102 +443,6 @@ a,
                         class="menu_mobile-close-img" />
                     </div>
                   </div>
-                  <div class="padding-bottom padding-xxlarge"></div>
-                  <div class="menu_mobile-links-layout">
-                    <a
-                      href="/approach"
-                      class="heading-style-h3 text-color-green-clear-70"
-                      >Approach</a
-                    >
-                    <a
-                      href="/portfolio"
-                      class="heading-style-h3 text-color-green-clear-70"
-                      >Portfolio</a
-                    >
-                    <a
-                      href="/team"
-                      class="heading-style-h3 text-color-green-clear-70"
-                      >Team</a
-                    >
-                    <a
-                      href="/oakley-capital"
-                      class="heading-style-h3 text-color-green-clear-70"
-                      >Oakley Capital</a
-                    >
-                    <a
-                      href="/private-area"
-                      class="heading-style-h3 text-color-green-clear-70"
-                      >PROzone</a
-                    >
-                    <button
-                      class="heading-style-h3 text-color-green-clear-70 is-transparent"
-                      data-wf-user-logout="Log out"
-                      data-wf-user-login="Log in"
-                      type="button">
-                      Log out
-                    </button>
-                  </div>
-                </div>
-                <div class="menu_mobile-bottom">
-                  <div class="menu_mobile-rrss-layout">
-                    <a
-                      href="https://www.linkedin.com/company/profounders-capital/"
-                      target="_blank"
-                      class="menu_mobile-rss w-inline-block">
-                      <div class="hide">Linkedin</div>
-                      <div class="menu_mobile-rrss-icon w-embed">
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2 0H16C17.1046 0 18 0.89543 18 2V16C18 17.1046 17.1046 18 16 18H2C0.89543 18 0 17.1046 0 16V2C0 0.89543 0.89543 0 2 0ZM5 15C5.27614 15 5.5 14.7761 5.5 14.5V7.5C5.5 7.2239 5.27614 7 5 7H3.5C3.22386 7 3 7.2239 3 7.5V14.5C3 14.7761 3.22386 15 3.5 15H5ZM4.25 6C3.42157 6 2.75 5.32843 2.75 4.5C2.75 3.67157 3.42157 3 4.25 3C5.07843 3 5.75 3.67157 5.75 4.5C5.75 5.32843 5.07843 6 4.25 6ZM14.5 15C14.7761 15 15 14.7761 15 14.5V9.9C15.0325 8.3108 13.8576 6.95452 12.28 6.76C11.177 6.65925 10.1083 7.1744 9.5 8.1V7.5C9.5 7.2239 9.2761 7 9 7H7.5C7.2239 7 7 7.2239 7 7.5V14.5C7 14.7761 7.2239 15 7.5 15H9C9.2761 15 9.5 14.7761 9.5 14.5V10.75C9.5 9.9216 10.1716 9.25 11 9.25C11.8284 9.25 12.5 9.9216 12.5 10.75V14.5C12.5 14.7761 12.7239 15 13 15H14.5Z"
-                            fill="currentColor" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a
-                      href="https://twitter.com/profounders?lang=es"
-                      target="_blank"
-                      class="menu_mobile-rss w-inline-block">
-                      <div class="hide">Twitter</div>
-                      <div class="menu_mobile-rrss-icon w-embed">
-                        <svg
-                          width="18"
-                          height="16"
-                          viewBox="0 0 18 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M17.9727 2.7174C17.5083 3.33692 16.9469 3.87733 16.3102 4.31776C16.3102 4.47959 16.3102 4.64142 16.3102 4.81225C16.3153 7.7511 15.1414 10.5691 13.0517 12.6345C10.9619 14.6999 8.13108 15.8399 5.19393 15.7989C3.49587 15.8046 1.81955 15.4169 0.2963 14.6661C0.21416 14.6302 0.16119 14.549 0.1615 14.4593V14.3604C0.1615 14.2313 0.26611 14.1267 0.39515 14.1267C2.0643 14.0716 3.6739 13.4929 4.99622 12.4724C3.48541 12.4419 2.12607 11.5469 1.50048 10.1707C1.46889 10.0956 1.47872 10.0093 1.52645 9.9432C1.57417 9.8771 1.65288 9.8407 1.73413 9.8471C2.1933 9.8932 2.65706 9.8505 3.10008 9.7212C1.43227 9.375 0.17909 7.9904 -0.000260003 6.2957C-0.00663 6.2144 0.0297999 6.1357 0.0958799 6.0879C0.16195 6.0402 0.24812 6.0303 0.32326 6.062C0.77082 6.2595 1.25397 6.3635 1.74312 6.3676C0.28172 5.40846 -0.34951 3.58405 0.20643 1.92622C0.26382 1.76513 0.40169 1.64612 0.56938 1.61294C0.73706 1.57975 0.90984 1.63728 1.0242 1.76439C2.99627 3.86325 5.70592 5.11396 8.58178 5.25279C8.50818 4.95885 8.47198 4.65676 8.47398 4.35372C8.50088 2.76472 9.48408 1.34921 10.9633 0.769872C12.4424 0.190542 14.1248 0.562032 15.2229 1.71044C15.9713 1.56785 16.6949 1.31645 17.3706 0.964212C17.4201 0.933312 17.4829 0.933312 17.5324 0.964212C17.5633 1.01373 17.5633 1.07652 17.5324 1.12604C17.2051 1.87552 16.6522 2.50412 15.9508 2.92419C16.565 2.85296 17.1684 2.70807 17.7481 2.49264C17.7969 2.45942 17.861 2.45942 17.9098 2.49264C17.9507 2.51134 17.9813 2.54711 17.9934 2.59042C18.0055 2.63373 17.9979 2.68018 17.9727 2.7174Z"
-                            fill="currentColor" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.youtube.com/channel/UCvZX1v7HqGVQ8FYGOngv9qg"
-                      target="_blank"
-                      class="menu_mobile-rss w-inline-block">
-                      <div class="hide">Youtube</div>
-                      <div class="menu_mobile-rrss-icon w-embed">
-                        <svg
-                          width="24"
-                          height="17"
-                          viewBox="0 0 24 17"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M23.5853 2.73465C23.2915 1.43755 22.2475 0.48058 20.9907 0.337828C18.0146 0.000207948 15.0023 -0.00155435 12.0038 0.000208021C9.00492 -0.00155435 5.99213 0.000207948 3.01601 0.337828C1.75996 0.48058 0.716717 1.43755 0.422895 2.73465C0.0047071 4.58187 0 6.59828 0 8.50013C0 10.402 0 12.4181 0.418188 14.2651C0.711515 15.5619 1.755 16.5189 3.0118 16.6619C5.98767 16.9998 9.00022 17.0016 11.9991 16.9998C14.9985 17.0016 18.0103 16.9998 20.986 16.6619C22.242 16.5192 23.2863 15.5622 23.5801 14.2651C23.9985 12.4179 24 10.4017 24 8.50013C24 6.59828 24.0035 4.58187 23.5853 2.73465ZM8.90285 12.2857C8.90285 9.58776 8.90285 6.91802 8.90285 4.21983C11.4464 5.56855 13.9731 6.9082 16.5328 8.26523C13.9811 9.61017 11.4531 10.9418 8.90285 12.2857Z"
-                            fill="currentColor" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="padding-bottom padding-xxlarge"></div>
                 </div>
               </div>
             </div>
@@ -591,7 +485,9 @@ a,
                       "
                       class="hero_first-title">
                       <h1 class="heading-style-h1 text-color-green">
-                        <span class="heading-style-h1 is-ivar">Gaurav</span>
+                        <h2 class="heading-style-h2 text-color-green">
+                          Gaurav Meena
+                        </h2>
                       </h1>
                     </div>
                     <div class="hero_second-title is-max-w">
