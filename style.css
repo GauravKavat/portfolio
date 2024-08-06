@@ -17,7 +17,6 @@ footer,
 header,
 hgroup,
 main,
-menu,
 nav,
 section,
 summary {
@@ -230,10 +229,6 @@ th {
 
 .w-icon-slider-left:before {
   content: "î˜";
-}
-
-.w-icon-nav-menu:before {
-  content: "î˜‚";
 }
 
 .w-icon-arrow-down:before,
@@ -1985,23 +1980,6 @@ textarea.w-select {
   color: #0082f3;
 }
 
-.w-nav-menu {
-  float: right;
-  position: relative;
-}
-
-[data-nav-menu-open] {
-  text-align: center;
-  background: #c8c8c8;
-  min-width: 200px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  overflow: visible;
-  display: block !important;
-}
-
 .w--nav-link-open {
   display: block;
   position: relative;
@@ -2017,16 +1995,11 @@ textarea.w-select {
   overflow: hidden;
 }
 
-.w-nav-overlay [data-nav-menu-open] {
-  top: 0;
-}
-
 .w-nav[data-animation="over-left"] .w-nav-overlay {
   width: auto;
 }
 
-.w-nav[data-animation="over-left"] .w-nav-overlay,
-.w-nav[data-animation="over-left"] [data-nav-menu-open] {
+.w-nav[data-animation="over-left"] .w-nav-overlay {
   z-index: 1;
   top: 0;
   right: auto;
@@ -2036,8 +2009,7 @@ textarea.w-select {
   width: auto;
 }
 
-.w-nav[data-animation="over-right"] .w-nav-overlay,
-.w-nav[data-animation="over-right"] [data-nav-menu-open] {
+.w-nav[data-animation="over-right"] .w-nav-overlay {
   z-index: 1;
   top: 0;
   left: auto;
@@ -2066,10 +2038,6 @@ textarea.w-select {
   background-color: #c8c8c8;
 }
 
-.w-nav[data-collapse="all"] .w-nav-menu {
-  display: none;
-}
-
 .w-nav[data-collapse="all"] .w-nav-button,
 .w--nav-dropdown-open,
 .w--nav-dropdown-toggle-open {
@@ -2081,20 +2049,12 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .w-nav[data-collapse="small"] .w-nav-menu {
-    display: none;
-  }
-
   .w-nav[data-collapse="small"] .w-nav-button {
     display: block;
   }
@@ -2105,10 +2065,6 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
-  .w-nav[data-collapse="tiny"] .w-nav-menu {
-    display: none;
-  }
-
   .w-nav[data-collapse="tiny"] .w-nav-button {
     display: block;
   }
@@ -2127,10 +2083,6 @@ textarea.w-select {
 
 .w-tabs:after {
   clear: both;
-}
-
-.w-tab-menu {
-  position: relative;
 }
 
 .w-tab-link {
@@ -2606,10 +2558,6 @@ figcaption {
 
 .padding-small {
   padding: 1rem;
-}
-
-.menu-padding {
-  padding: 7.5rem;
 }
 
 .padding-custom2 {
@@ -3643,23 +3591,6 @@ figcaption {
   line-height: 1.33;
 }
 
-.menu.is-white {
-  background-color: var(--other--background);
-}
-
-.menu_layout {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-.menu_brand {
-  grid-column-gap: 0.235625rem;
-  grid-row-gap: 0.235625rem;
-  align-items: flex-end;
-  display: flex;
-}
-
 .text-size-logo {
   letter-spacing: -0.02em;
   font-size: 1.47063rem;
@@ -3670,26 +3601,8 @@ figcaption {
   color: var(--principal--green-dark);
 }
 
-.menu_link-layout {
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
-  align-items: center;
-  display: flex;
-}
-
 .text-color-green-70 {
   color: var(--text-hover--green-70);
-}
-
-.menu_prozone {
-  grid-column-gap: 1.5rem;
-  align-items: center;
-  display: flex;
-}
-
-.menu_horizontal-padding {
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
 }
 
 .hero {
@@ -3720,7 +3633,6 @@ figcaption {
 }
 
 .hero_card.is-green-clear {
-  background-color: var(--principal--green-clear);
   flex: 1;
 }
 
@@ -3816,32 +3728,8 @@ figcaption {
   display: none;
 }
 
-.menu_mobile {
-  z-index: 101;
-  position: fixed;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-}
-
-.menu_mobile.show_tablet {
-  display: none;
-}
-
-.menu_mobile-layout {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
 .text-color-green-clear {
   color: var(--principal--green-clear);
-}
-
-.menu_mobile-rss {
-  width: 2.5rem;
-  height: 2.5rem;
 }
 
 .main-grid {
@@ -5148,7 +5036,7 @@ figcaption {
 
 .hero_color.is-green-clear {
   z-index: -1;
-  background-color: var(--principal--green-clear);
+
   border-radius: 1.25rem;
   width: 100%;
   height: 100%;
@@ -5845,76 +5733,8 @@ figcaption {
     overflow: hidden;
   }
 
-  .menu_line-bottom.is-green-clear {
-    background-color: var(--principal--green-clear);
-  }
-
-  .menu_mobile {
-    z-index: 9999;
-  }
-
-  .menu_mobile.show_tablet {
-    background-color: var(--principal--green-dark);
-    display: none;
-  }
-
-  .menu_mobile-layout {
-    justify-content: flex-end;
-  }
-
-  .menu_mobile-button {
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-  }
-
-  .menu_mobile-links-layout {
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-  }
-
   .text-color-green-clear {
     color: var(--principal--green-clear);
-  }
-
-  .menu_mobile-100vh {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
-    display: flex;
-  }
-
-  .menu_mobile-rrss-layout {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    align-items: center;
-    display: flex;
-  }
-
-  .menu_mobile-rss {
-    background-color: var(--text-hover--green-clear-20);
-    color: var(--principal--green-clear);
-    border-radius: 4px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding-bottom: 0;
-    padding-right: 0;
-    transition: all 0.3s;
-    display: flex;
-  }
-
-  .menu_mobile-rss:hover {
-    background-color: var(--principal--green-clear);
-    color: var(--principal--green-dark);
   }
 
   .main-grid {
@@ -6685,19 +6505,6 @@ figcaption {
 
   .hero_card {
     height: 28rem;
-  }
-
-  .hero_card.is-green-clear.is-fixed {
-    max-height: 28rem;
-  }
-
-  .hero_card.is-green-clear.is-fixed.is-smaller {
-    max-height: 20.5rem;
-  }
-
-  .hero_card.is-green-dark.is-fixed,
-  .hero_card.is-purple {
-    max-height: 28rem;
   }
 
   .hero_card-layout {
