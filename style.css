@@ -3633,7 +3633,32 @@ figcaption {
 }
 
 .hero_card.is-green-clear {
+  background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(
+      at 23% 8%,
+      hsla(82, 59%, 65%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 79% 94%, hsla(172, 54%, 53%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 24%, hsla(147, 100%, 48%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 79%, hsla(131, 100%, 50%, 1) 0px, transparent 50%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
   flex: 1;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 20%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 70%;
+  }
+  100% {
+    background-position: 0% 20%;
+  }
 }
 
 .hero_card.is-green-clear.is-fixed {
