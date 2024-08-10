@@ -296,6 +296,15 @@ html.w-mod-touch * {
   display: none;
 }
 
+.selected-project {
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.selected-project:hover {
+  transform: scale(0.9);
+}
+
 .w-button {
   color: #fff;
   line-height: inherit;
